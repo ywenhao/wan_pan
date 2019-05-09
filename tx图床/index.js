@@ -1,0 +1,1 @@
+setTimeout(function(){MI['_ajaxXhr_message.t.qq.com'] = 1;MI.ajax('_ajax_message.t.qq.com');},50);

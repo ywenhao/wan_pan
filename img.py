@@ -80,15 +80,17 @@ def dowmloadPicture(html, keyword):
  
  
 if __name__ == '__main__':  # 主函数入口
-    tm = int(input('请输入每类图片的下载数量 ：'))
-    numPicture = tm
+    
     line_list = []
     while 1:
     	a = input('输入图片关键字,一个n结束输入：')
     	if a.upper() =='N':
     		break
     	line_list.append(a)
- 
+
+    tm = int(input('请输入每类图片的下载数量 ：'))
+    numPicture = tm
+
     for word in line_list:
         url = 'http://image.baidu.com/search/flip?tn=baiduimage&ie=utf-8&word=' + word + '&pn='
         tot = Find(url)
